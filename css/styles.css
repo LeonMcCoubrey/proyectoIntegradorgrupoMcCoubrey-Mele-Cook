@@ -34,6 +34,7 @@
     width: 180px;
     height: 50px;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .title{
@@ -79,7 +80,7 @@
 }
 
 header{
-    background-color: rgb(127, 255, 72);
+    background-image: url(../img/fondo-campo-hierba-verde-deportes-futbol-futbol-fondo-textura-cesped-verde-cerca_64749-2440.jpg);
 }
 body{
     background-color: #56ff61df;
@@ -95,4 +96,90 @@ footer{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     color: white;
+}
+
+.headl {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #007808;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;  
+}
+.headr {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #007808;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;  
+    margin-left: 1%;
+}
+
+.display {
+    display: flex;
+}
+a {
+  text-decoration: none; 
+  color: rgb(255, 255, 255);
+}
+.bullets1{
+    margin: 5px;
+}
+
+.obligatorio{
+    color: red;
+    margin-top: 2px;
+    font-size: smaller;
+}
+
+::placeholder{
+    padding-left: 4px;
+    font-size: smaller;
+}
+
+.form2{
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.recuerdame{
+    display: flex;
+    justify-content: left
+}
+
+.recuerdamel{
+    margin-left: 5px;
+}
+
+.formbox2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(197, 191, 191, 0.5);
+    width: 35vw;
+    height: 350px;
+    margin: 50px auto;
+    border-radius: 180px;
+    border: 3px solid black;
+}
+.NO{
+    color: rgb(206, 16, 16);
+    margin-left: 40px;
 }
