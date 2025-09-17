@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -21,3 +22,190 @@
    width: 180px;
    height: 180px;
 }
+=======
+.logo{
+    border-radius: 200px;
+    border: 3px solid #999;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-left: 41.5%;
+    background-color: white;
+    
+} 
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.navb{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #007808;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.formbox{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 255, 160);
+    width: 35vw;
+    height: 780px;
+    margin: 50px auto;
+    border: 3px solid;
+    border-color: black;
+    border-radius: 130px;
+}
+
+.form1{
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button{
+    padding: 8px;
+    background-color:rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.buttonbox{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-image: url(../img/fondo-campo-hierba-verde-deportes-futbol-futbol-fondo-textura-cesped-verde-cerca_64749-2440.jpg);
+}
+body{
+    background-color: #56ff61df;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);;
+    height: 80px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: white;
+}
+
+.headl {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #007808;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;  
+}
+.headr {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #007808;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;  
+    margin-left: 1%;
+}
+
+.display {
+    display: flex;
+}
+a {
+  text-decoration: none; 
+  color: rgb(255, 255, 255);
+}
+.bullets1{
+    margin: 5px;
+}
+
+.obligatorio{
+    color: red;
+    margin-top: 2px;
+    font-size: smaller;
+}
+
+::placeholder{
+    padding-left: 4px;
+    font-size: smaller;
+}
+
+.form2{
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.recuerdame{
+    display: flex;
+    justify-content: left
+}
+
+.recuerdamel{
+    margin-left: 5px;
+}
+
+.formbox2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(197, 191, 191, 0.5);
+    width: 35vw;
+    height: 350px;
+    margin: 50px auto;
+    border-radius: 180px;
+    border: 3px solid black;
+}
+.NO{
+    color: rgb(206, 16, 16);
+    margin-left: 40px;
+}
+>>>>>>> f4649c195a3e09076f2aad523539bd13a6e8ed91
