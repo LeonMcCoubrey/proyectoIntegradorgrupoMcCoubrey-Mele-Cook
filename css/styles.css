@@ -87,6 +87,7 @@ header{
 }
 body{
     background-color: #56ff61df;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 footer{
     display: flex;
@@ -172,7 +173,7 @@ a {
     align-items: center;
     background-color: rgba(197, 191, 191, 0.5);
     width: 35vw;
-    height: 350px;
+    height: 450px;
     margin: 50px auto;
     border-radius: 180px;
     border: 3px solid black;
