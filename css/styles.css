@@ -206,11 +206,31 @@ a {
     text-align: center;
     margin: 15px;
     border-radius: 12px;
+ background-image: url('../img/fondo-campo-hierba-verde-deportes-futbol-futbol-fondo-textura-cesped-verde-cerca_64749-2440.jpg');
+    background-size: cover;
+    background-position: center;
     background: rgba(255, 255, 255, 0.8);
-    
+
 
 }
 .container article img{
    width: 180px;
    height: 180px;
 }
+
+.producto{
+   background-color: white;
+    border: radius 12px;
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+
+}
+.realtags{
+    color: black;
+    justify-content: left;
+}
+
+
+
+
