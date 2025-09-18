@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-}
 
 .logo{
     border-radius: 200px;
@@ -39,6 +37,7 @@
     height: 50px;
     font-size: 18px;
     text-decoration: none;
+    border-radius: 180px;
 }
 
 .title{
@@ -151,11 +150,6 @@ a {
     font-size: smaller;
 }
 
-::placeholder{
-    padding-left: 4px;
-    font-size: smaller;
-}
-
 .form2{
     padding: 15px;
     padding-left: 10px;
@@ -192,7 +186,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    background-image: url('../img/fondo-campo-hierba-verde-deportes-futbol-futbol-fondo-textura-cesped-verde-cerca_64749-2440.jpg');
+    background-image: url(../img/pasto.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
