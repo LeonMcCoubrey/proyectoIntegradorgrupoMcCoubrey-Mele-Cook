@@ -1,4 +1,22 @@
-
+.ligas li{
+  list-style: none;
+  padding: 0;
+  border: 5px solid #999999b9;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-color: #007808;
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  width: 180px;
+  height: 50px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 180px;
+}
 
 .logo{
     border-radius: 200px;
