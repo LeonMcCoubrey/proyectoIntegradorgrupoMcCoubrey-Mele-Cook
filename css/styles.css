@@ -1,3 +1,4 @@
+/****************************************PAGINA INDEX********************************************/
 .ligas li{
   list-style: none;
   padding: 0;
@@ -17,6 +18,37 @@
   text-decoration: none;
   border-radius: 180px;
 }
+
+.container_index{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+} 
+.container_index article {
+    border: none;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+
+}
+.container_index article img{
+   width: 180px;
+   height: 180px;
+}
+
+
 
 .logo{
     border-radius: 200px;
