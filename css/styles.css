@@ -1,5 +1,12 @@
 /****************************************PAGINA INDEX********************************************/
+.categorias{
+    height: 50;
+width: 20%;
+}
+
+
 .ligas li{
+flex-direction: column;
   list-style: none;
   padding: 0;
   border: 5px solid #999999b9;
@@ -22,15 +29,11 @@
 .container_index{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
+    justify-content: space-around;
+    margin-top: 20px;
 } 
 .container_index article {
+    color: black;
     border: none;
     padding: 15px;
     width: 200px;
@@ -40,7 +43,6 @@
     background-size: cover;
     background-position: center;
     background: rgba(255, 255, 255, 0.8);
-    color: black;
 
 }
 .container_index article img{
