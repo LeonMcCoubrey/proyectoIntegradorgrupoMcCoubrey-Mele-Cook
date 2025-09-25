@@ -168,6 +168,7 @@ header{
 }
 body{
     background-color: #56ff61df;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 footer{
     display: flex;
@@ -253,7 +254,7 @@ a {
     align-items: center;
     background-color: rgba(197, 191, 191, 0.5);
     width: 35vw;
-    height: 350px;
+    height: 450px;
     margin: 50px auto;
     border-radius: 180px;
     border: 3px solid black;
@@ -273,6 +274,8 @@ a {
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+    
+    
 } 
 .container article {
     border: none;
@@ -285,6 +288,7 @@ a {
     background-size: cover;
     background-position: center;
     background: rgba(255, 255, 255, 0.8);
+    color: black;
 
 
 }
@@ -293,18 +297,8 @@ a {
    height: 180px;
 }
 
-.producto{
-   background-color: white;
-    border: radius 12px;
-    padding: 20px;
-    margin: 40px;
-    text-align: center;
 
-}
-.realtags{
-    color: black;
-    justify-content: left;
-}
+
 
 
 
