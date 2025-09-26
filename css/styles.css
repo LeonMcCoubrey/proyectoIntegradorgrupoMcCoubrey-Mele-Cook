@@ -131,7 +131,7 @@ font-weight: bold;
     margin: 50px auto;
     border: 3px solid;
     border-color: black;
-    border-radius: 130px;
+    border-radius: 70px;
 }
 
 .form1{
@@ -248,7 +248,7 @@ a {
     width: 35vw;
     height: 500px;
     margin: 50px auto;
-    border-radius: 180px;
+    border-radius: 80px;
     border: 3px solid black;
 }
 .NO{
@@ -333,8 +333,7 @@ a {
 
 
 .producto-form {
-  
-  max-width: 45%;
+  width: 800px;
   padding: 20px;
   background: white;
   border: 1px solid gray;
