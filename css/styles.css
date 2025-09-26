@@ -266,6 +266,84 @@ a {
    width: 180px;
    height: 180px;
 }
+.productoreal{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: white;
+
+}
+.productorealinfo{
+       
+}
+.producto-info img{
+     width: 250px;
+     margin: 15px;
+     border: 2px solid gray ;
+     border-radius: 10px;
+
+}
+.precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: blue;
+}
+
+
+
+.tags {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.tags li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tags a {
+  background: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+
+}
+
+
+.producto-form {
+  flex: 1;
+  max-width: 45%;
+  padding: 20px;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+label {
+  font-weight: bold;
+    
+}
+
+input[type="text"], input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
 
 
 

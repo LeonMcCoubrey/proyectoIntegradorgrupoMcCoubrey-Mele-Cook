@@ -27,53 +27,52 @@
 </div>  
     </nav>
     </header>
+<section class="productoreal">
+  <div class="producto-info">
+    <h1>Remera Real Madrid</h1>
+    <img src="./img/remera real madrid.jpeg" alt="Remera Real Madrid">
+    <p class="precio">5000$</p>
+    <p class="categoria">Categoría: La Liga</p>
+    <p class="stock">10 disponibles</p>
+    <ul class="tags">
+      <li><a href="">Tag 1</a></li>
+      <li><a href="">Tag 2</a></li>
+      <li><a href="">Tag 3</a></li>
+    </ul>
+  </div>
 
-    <section class="contenedorreal">
-        <h1 class='tituloreal'>Remera real madrid</h1>
-        <img class="productoreal"  src="./img/remera real madrid.jpeg" alt="">
-          <p class="precioreal">5000$</p>
-        <section class="categoriastock">
-          <p>categoria la Liga</p>
-        <p>10 disponibles</p>
-    </section>
-        
-    <nav>
-<ul>
-<section class="realtags">
-<li><a href="">Tag 1</a></a></li>
-<li><a href="">Tag 2</a></a></li>
-<li><a href="">Tag 3</a></a></li>
-</section>
-</ul>
-
-</nav>
-<form class="resena" action="./index.html" method="get"></form>
-
-<div class="Rating">
-
-    <label for="Rating">Rating</label>
-    <div class="opcionesrating">
+  <div class="producto-form">
+    <form action="./index.html" method="get">
+      <div class="rating">
+     <label>Rating:</label>
+    <div class="radios">
     <input id="Rating" type="radio" name="Rating" value="1">
-     <input id="Rating" type="radio" name="Rating" value="2">
+    <input id="Rating" type="radio" name="Rating" value="2">
     <input id="Rating" type="radio" name="Rating" value="3">
-     <input id="Rating" type="radio" name="Rating" value="4">
-      <input id="Rating" type="radio" name="Rating" value="5">
-     
-     
-    </div class="devolucion">
-<label for="Comentario">Comentario</label>
-<input type="text" name="comentario" id="comentario" value="">
-<div>
+    <input id="Rating" type="radio" name="Rating" value="4">
+    <input id="Rating" type="radio" name="Rating" value="5">
 
-</div class="devolucion">
+          
+        </div>
+      </div>
 
-<label for="fecha">Fecha</label>
-<input type="text" name="fecha" id="fecha" value="">
-<div class="devolucion">
-    <label for="nombre">nombre</label>
-    <input type="text" name="nombre" id="nombre" value="">
-</div>
-</form>
+      <div class="form-group">
+        <label for="comentario">Comentario</label>
+        <input type="text" id="comentario" name="comentario">
+      </div>
+
+      <div class="form-group">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha">
+      </div>
+
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+      </div>
+    </form>
+  </div>
+</section>
 
 
 
