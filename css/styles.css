@@ -189,7 +189,7 @@ width: 100%;
     margin: 50px auto;
     border: 3px solid;
     border-color: black;
-    border-radius: 130px;
+    border-radius: 70px;
 }
 
 .form1{
@@ -267,6 +267,7 @@ footer{
 
 .display {
     display: flex;
+    
 }
 a {
   text-decoration: none; 
@@ -306,11 +307,12 @@ a {
     width: 35vw;
     height: 500px;
     margin: 50px auto;
-    border-radius: 180px;
+    border-radius: 80px;
     border: 3px solid black;
 }
 .NO{
     color: rgb(206, 16, 16);
+    
     margin-left: 40px;
 }
 .container{
@@ -326,6 +328,8 @@ a {
     height: 100%;
     
     
+    
+    
 } 
 .container article {
     border: none;
@@ -338,7 +342,6 @@ a {
     background-size: cover;
     background-position: center;
     background: rgba(255, 255, 255, 0.8);
-    color: black;
 
 
 }
@@ -389,8 +392,7 @@ a {
 
 
 .producto-form {
-  
-  max-width: 45%;
+  width: 800px;
   padding: 20px;
   background: white;
   border: 1px solid gray;
