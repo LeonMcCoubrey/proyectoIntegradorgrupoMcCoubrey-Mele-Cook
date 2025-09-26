@@ -16,6 +16,9 @@ font-weight: bold;
   font-size: 16px;
   background-color: white;
 }
+.main1{
+    display: flex;
+}
 
 .logo_index{
     border-radius: 150px;
@@ -27,11 +30,7 @@ font-weight: bold;
     margin-left: 40%;
     background-color: white;
 }
-
-div {
-    width: 100%;
-    height: 100%;
-}
+/********************contenido_main****************/
 .ligas{
     display: flex;
     flex-wrap: wrap;
@@ -58,16 +57,7 @@ div {
   border-radius: 180px;
 }
 
-.container_index{
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end; 
-    align-items: stretch;
-    width: 80%;
-} 
-.container_index article {
+.caja {
     color: black;
     border: none;
     padding: 15px;
@@ -79,12 +69,9 @@ div {
     background: rgba(255, 255, 255, 0.8);
 
 }
-.container_index article img{
-   width: 180px;
-   height: 180px;
-}
 
 
+/*************************************cerramos**************************************/ 
 
 .logo{
     border-radius: 200px;
@@ -140,11 +127,11 @@ div {
     align-items: center;
     background-color: rgb(100, 255, 160);
     width: 35vw;
-    height: 780px;
+    height: 850px;
     margin: 50px auto;
     border: 3px solid;
     border-color: black;
-    border-radius: 130px;
+    border-radius: 70px;
 }
 
 .form1{
@@ -260,9 +247,9 @@ a {
     align-items: center;
     background-color: rgba(197, 191, 191, 0.5);
     width: 35vw;
-    height: 450px;
+    height: 500px;
     margin: 50px auto;
-    border-radius: 180px;
+    border-radius: 80px;
     border: 3px solid black;
 }
 .NO{
@@ -349,8 +336,7 @@ a {
 
 
 .producto-form {
-  
-  max-width: 45%;
+  width: 800px;
   padding: 20px;
   background: white;
   border: 1px solid gray;
