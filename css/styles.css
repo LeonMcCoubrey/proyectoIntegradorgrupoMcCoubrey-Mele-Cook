@@ -222,6 +222,7 @@ footer{
 
 .display {
     display: flex;
+    
 }
 a {
   text-decoration: none; 
@@ -281,6 +282,8 @@ a {
     height: 100%;
     
     
+    
+    
 } 
 .container article {
     border: none;
@@ -293,7 +296,6 @@ a {
     background-size: cover;
     background-position: center;
     background: rgba(255, 255, 255, 0.8);
-    color: black;
 
 
 }
