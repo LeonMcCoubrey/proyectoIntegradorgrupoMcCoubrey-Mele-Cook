@@ -453,3 +453,46 @@ input[type="date"] {
     border: 1px solid gray;
     border-radius: 6px;
 }
+
+@media (max-width: 320px) {
+    
+.contenidoindex { 
+  display: none;
+  }
+
+.logo{
+    margin-right: 50%;
+    align-items: center;
+ }
+ .formbox {
+    background-color: rgba(128, 128, 128, 0);
+    border-color: #99999900;
+    width: 20px;
+}
+.main {
+    align-items: center;
+    justify-content: center;
+    margin-right: 80%;
+}
+.display{
+    justify-content: space-between;
+}
+.formbox2{
+    background-color: rgba(128, 128, 128, 0);
+    border-color: #99999900;
+    margin-bottom: 80px;
+}
+.productoreal{
+    display: flex; 
+    flex-direction: column;
+}
+.producto-form{
+    width: 235px;
+}
+.nav{
+    margin-left: 35px;
+}
+.titleR{
+    font-size: 17px;
+}
+}
