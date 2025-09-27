@@ -455,13 +455,21 @@ input[type="date"] {
 }
 
 @media (max-width: 320px) {
-    
+form .busqueda {
+    text-align: center;
+}
+.cajabusqueda label {
+    margin-left: 0%;
+}
+.logo_index {
+    margin: 10px 20px 30px 40px 
+}
 .contenidoindex { 
   display: none;
   }
 
 .logo{
-    margin-right: 50%;
+    margin: 10px 20px 30px 40px;
     align-items: center;
  }
  .formbox {
