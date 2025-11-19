@@ -1,90 +1,103 @@
 /****************************************PAGINA INDEX********************************************/
 .cajabusqueda {
-display: flex;
-flex-direction: column;
-align-items: center;   
-margin-top: 20px;
-color: white;          
-font-size: 24px;
-font-weight: bold;
-}
-.cajabusqueda input {
-  padding: 12px 18px;
-  width: 300px;
-  border: 2px;         
-  text-decoration: none;
-  font-size: 16px;
-  background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.logo_index{
+.cajabusqueda input {
+    padding: 12px 18px;
+    width: 300px;
+    border: 2px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: white;
+}
+
+.cajabusqueda label {
+    margin-left: 20%;
+}
+
+.logo_index {
     border-radius: 150px;
     border: 3px solid #999;
     width: 200px;
     height: 200px;
     display: flex;
     justify-content: center;
-    margin-left: 40%;
+    margin-left: 45%;
     background-color: white;
 }
-/********************contenido_main****************/
-main{
+
+/***************************************contenido_main_INDEX**************************************/
+main {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
 }
+
 .contenidoindex {
     width: 30%;
 }
-.categorias{
-  font-size: 24px;
-  margin-bottom: 20px;
-  padding: 12px;
-  margin: 15px 30px;
-  text-decoration: underline;
+
+.categorias {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    text-decoration: underline;
 }
-.ligas{
+
+.ligas {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: stretch;
-    width: 20%;
-    height: 100%;
+    width: 40%;
 }
-.ligas li{
-  list-style: none;
-  border: 5px solid #999999b9;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  background-color: #007808;
-  color: white;
-  margin: 60px 0px 15px -15px;
-  text-align: center;
-  font-weight: bold;
-  width: 180px;
-  height: 50px;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 180px;
+
+.ligas li {
+    list-style: none;
+    border: 5px solid #999999b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007808;
+    color: white;
+    margin: 25px 0px 15px 15px;
+    text-align: center;
+    font-weight: bold;
+    width: 300px;
+    height: 85px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 180px;
+
 }
+
 .caja {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
     width: 70%;
 }
+
 .contenedor {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 5%;
 }
-.contenedor article{
+
+.contenedor article {
     border: none;
     text-align: center;
     color: black;
 }
+
 .card {
     width: 300px;
     border: none;
@@ -94,32 +107,39 @@ width: 100%;
     font-weight: bold;
 }
 
-.card img{
+.card img {
     width: 200px;
     height: 200px;
 }
 
-
 .productostop {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 36px;
-    color:rgb(102, 102, 102);
-    background-color: beige;
+    color: green;
+    background-color: black;
+    border: solid 10px gray;
+    margin-left: 27%;
 }
+
 .productosaleatorios {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 36px;
-    color: rgb(102, 102, 102);
-    background-color:beige;
-}
-.contenedoraleatorio {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-width: 100%;
+    color: green;
+    background-color: black;
+    border: solid 10px gray;
+    margin-left: 28%;
 }
 
-.caja article img{
+.contenedoraleatorio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 5%;
+}
+
+.caja article img {
     color: black;
     border: none;
     padding: 15px;
@@ -132,9 +152,9 @@ width: 100%;
 }
 
 
-/*************************************cerramos**************************************/ 
+/*************************************cerramos****************************************************/
 
-.logo{
+.logo {
     border-radius: 200px;
     border: 3px solid #999;
     width: 250px;
@@ -143,10 +163,10 @@ width: 100%;
     justify-content: center;
     margin-left: 41.5%;
     background-color: white;
-    
-} 
 
-.nav{
+}
+
+.nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -157,8 +177,8 @@ width: 100%;
 }
 
 
-.navb{
-    display: flex; 
+.navb {
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #007808;
@@ -174,14 +194,15 @@ width: 100%;
     border-radius: 180px;
 }
 
-.title{
+.title {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 30px;
     margin-top: 20px;
 }
-.formbox{
+
+.formbox {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -195,15 +216,15 @@ width: 100%;
     border-radius: 70px;
 }
 
-.form1{
+.form1 {
     padding: 15px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.button{
+.button {
     padding: 8px;
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     border-radius: 5px;
     border: 0;
     color: white;
@@ -211,25 +232,28 @@ width: 100%;
     margin: 0 15px;
 }
 
-.buttonbox{
+.buttonbox {
     display: flex;
     justify-content: center;
 }
 
-header{
+header {
     background-image: url(../img/fondo-campo-hierba-verde-deportes-futbol-futbol-fondo-textura-cesped-verde-cerca_64749-2440.jpg);
 }
-body{
+
+body {
     background-color: #56ff61df;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-footer{
+
+footer {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);;
+    background-color: rgb(0, 0, 0);
+    ;
     height: 80px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -237,7 +261,8 @@ footer{
 }
 
 .headl {
-    display: flex; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: #007808;
@@ -249,10 +274,11 @@ footer{
     font-size: 18px;
     flex-wrap: wrap;
     flex-direction: row;
-    text-decoration: none;  
+    text-decoration: none;
 }
+
 .headr {
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #007808;
@@ -264,48 +290,50 @@ footer{
     font-size: 18px;
     flex-wrap: wrap;
     flex-direction: row;
-    text-decoration: none;  
+    text-decoration: none;
     margin-left: 1%;
 }
 
 .display {
     display: flex;
-    
+    flex-wrap: wrap;
 }
+
 a {
-  text-decoration: none; 
-  color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
-.bullets1{
+
+.bullets1 {
     margin: 5px;
 }
 
-.obligatorio{
+.obligatorio {
     color: red;
     margin-top: 2px;
     font-size: smaller;
 }
 
-.form2{
+.form2 {
     padding: 15px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.recuerdame{
+.recuerdame {
     display: flex;
     justify-content: left
 }
 
-.recuerdamel{
+.recuerdamel {
     margin-left: 5px;
 }
 
-.formbox2{
+.formbox2 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: right;
     background-color: rgba(197, 191, 191, 0.5);
     width: 35vw;
     height: 500px;
@@ -313,12 +341,14 @@ a {
     border-radius: 80px;
     border: 3px solid black;
 }
-.NO{
+
+.NO {
+    text-align: center;
     color: rgb(206, 16, 16);
-    
-    margin-left: 40px;
+    ;
 }
-.container{
+
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -329,11 +359,12 @@ a {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    
-    
-    
-    
-} 
+
+
+
+
+}
+
 .container article {
     border: none;
     padding: 15px;
@@ -341,96 +372,136 @@ a {
     text-align: center;
     margin: 15px;
     border-radius: 12px;
- background-image: url('../img/fondo-campo-hierba-verde-deportes-futbol-futbol-fondo-textura-cesped-verde-cerca_64749-2440.jpg');
+    background-image: url('../img/fondo-campo-hierba-verde-deportes-futbol-futbol-fondo-textura-cesped-verde-cerca_64749-2440.jpg');
     background-size: cover;
     background-position: center;
     background: rgba(255, 255, 255, 0.8);
 
 
 }
-.container article img{
-   width: 180px;
-   height: 180px;
+
+.container article img {
+    width: 180px;
+    height: 180px;
 }
-.productoreal{
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      background-color: white;
+
+.productoreal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
 
 }
 
-.producto-info img{
-     width: 250px;
-     margin: 15px;
-     border: 2px solid gray ;
-     border-radius: 10px;
+.producto-info img {
+    width: 250px;
+    margin: 15px;
+    border: 2px solid gray;
+    border-radius: 10px;
 
 }
+
 .precio {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: blue;
 }
 
 
 
 .tags {
-  margin-top: 10px;
-  padding: 0;
+    margin-top: 10px;
+    padding: 0;
 }
 
 .tags li {
-  display: inline-block;
-  margin-right: 10px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .tags a {
-  background: blue;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 8px;
+    background: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
 
 }
 
 
 .producto-form {
-  width: 800px;
-  padding: 20px;
-  background: white;
-  border: 1px solid gray;
-  border-radius: 10px;
+    width: 800px;
+    padding: 20px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
 .form-group {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 
 label {
-  font-weight: bold;
-    
+    font-weight: bold;
+
 }
 
-input[type="text"], input[type="date"] {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid gray;
-  border-radius: 6px;
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 6px;
 }
 
+@media (max-width: 320px) {
+form .busqueda {
+    text-align: center;
+}
+.cajabusqueda label {
+    margin-left: 0%;
+}
 
+.logo_index {
+    margin: 10px 20px 30px 40px;
+}
+.contenidoindex { 
+  display: none;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.logo{
+    margin: 10px 20px 30px 40px;
+    align-items: center;
+ }
+ .formbox {
+    background-color: rgba(128, 128, 128, 0);
+    border-color: #99999900;
+    width: 20px;
+}
+.main {
+    align-items: center;
+    justify-content: center;
+    margin-right: 80%;
+}
+.display{
+    justify-content: space-between;
+}
+.formbox2{
+    background-color: rgba(128, 128, 128, 0);
+    border-color: #99999900;
+    margin-bottom: 80px;
+}
+.productoreal{
+    display: flex; 
+    flex-direction: column;
+}
+.producto-form{
+    width: 235px;
+}
+.nav{
+    margin-left: 35px;
+}
+.titleR{
+    font-size: 17px;
+}
+}
