@@ -44,7 +44,7 @@ main {
     width: 30%;
 }
 
-.categorias {
+.contenidoindex {
     font-size: 24px;
     margin-bottom: 20px;
     margin-left: 30%;
@@ -59,7 +59,7 @@ main {
     width: 40%; 
 }
 
-.ligas li {
+.category {
     list-style: none;
     border: 5px solid #999999b9;
     display: flex;

@@ -1,6 +1,6 @@
 let catalogo = document.querySelector(".catalogo");
 
-fetch("https://dummyjson.com/products?limit=10")
+fetch("https://dummyjson.com/products/")
   .then(res => res.json())
   .then(data => {
 
@@ -25,3 +25,29 @@ fetch("https://dummyjson.com/products?limit=10")
   .catch(error => {
     console.log("Hubo un error al cargar los productos:", error);
   });
+  let categorias = document.querySelector(".contenidoindex")
+fetch(('https://dummyjson.com/products/category-list'))
+
+
+ .then(function(response) {
+   return response.json()
+ })
+
+
+ .then(function(data) {
+
+
+   for (let i = 0; i < data.length; i++) {
+       let categoria = data[i];
+       if (categoria){
+           categorias.innerHTML += `
+               <li class="category">
+               <a href="./category.html?category=${categoria}">${categoria}</a>
+               </li>`
+           console.log("Categorias");
+       }
+   }
+ })
+ .catch(function(error) {
+   console.log("Error: " + error)
+ })
