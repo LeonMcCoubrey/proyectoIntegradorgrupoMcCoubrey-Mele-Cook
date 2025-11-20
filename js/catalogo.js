@@ -6,17 +6,16 @@ fetch("https://dummyjson.com/products?limit=10")
 
     let productos = data.products;
 
-    productos.forEach((p, i) => {
+    productos.forEach((producto, i) => {
 
       catalogo.innerHTML += `
         <article class="caja${i+1}">
-          <a href="./producto.html?id=${p.id}">
-            <img src="${p.thumbnail}" alt="${p.title}">
-            <p>Precio: $${p.price}</p>
-            <p>${p.stock} en stock</p>
+          <a href="./producto.html?id=${producto.id}">
+            <img src="${producto.thumbnail}" alt="${producto.title}">
+            <p>Precio: $${producto.price}</p>
+            <p>${producto.stock} en stock</p>
           </a> 
-          <span class="ver-detalle">Ver detalle</span>
-        Ver detalle
+       <span class="ver-detalle">Ver detalle</span>
           </a>
         </article>
       `;
