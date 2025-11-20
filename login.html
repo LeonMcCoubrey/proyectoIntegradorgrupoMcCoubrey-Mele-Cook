@@ -30,45 +30,50 @@
         </nav>
     </header>
 
-
-    <section>
+<section class="contenido"></section>
+<section class="contenidoindex"></section>
+    
+  <section class="catalogo"></section>
+    <section class="cajalogin">
 
         <article class="formbox2">
-            <form action="./index.html" class="logeo" method="get">
+              <form action="./index.html" method="get" class="logeo">
 
-                <article class="title">
+            <article class="title">
                     <h1>Iniciar sesión</h1>
-                </article>
-
-                <div class="form2">
-                    <label for="email">Email</label>
-                    <br><input class="text1" type="email" id="email" name="email" value=""
-                        placeholder="Ingresa tu email">
-                    <p class="invalid-feedback email">Obligatorio.</p>
-                </div>
-
-                <div class="form2">
-                    <label for="Contraseña">Contraseña</label>
-                    <br><input class="text1" type="password" id="password" name="password" value=""
-                        placeholder="Ingresa tu contraseña">
-                    <p class="invalid-feedback password"></p>
-                </div>
-
-                <div class="recuerdame">
-                    <label class="recuerdamel" for="recuerdame">Recuerdame</label>
-                    <input class="reccheck" type="checkbox" id="recuerdame" name="recuerdame" value="">
-                </div>
-
-                <div class="form1 buttonbox">
-                    <button class="button" type="submit">Ingresar</button>
-                </div>
-                <div>
-                    <button><a href="./register.html" class="NO">No tengo cuenta</a></button>
-                </div>
+            </article>
+            <div class="form2">
+                <label for="email">Email</label>
+                <input id="Email"  type="email" name="email" value="">
+            </div>
+            <div class="form2">
+                <label for="password">Password</label>
+                <input id="Password" type="password" name="password" value="">
+            </div>
+            <div>
+                <button type="submit">Ingresar</button>
+            </div>
+            </ul>
+            <div class="recuerdame">
+                <a href="./registro.html">No tengo una cuenta</a>
+            </div>
+            </nav>
+        </form>
         </article>
-        <footer>
-            <p> *Franco Mele * Thomas Cook * Leon McCoubrey* </p>
-        </footer>
+        
+    </section>
+  <footer class="footer">
+    <ul>
+      <li>Thomas Cook</li>
+      <li>Leon Mc Coubrey</li>
+      <li>Franco Mele</li>
+    </ul>
+  </footer>
+
+
+        
+        <script src="./js/login.js"></script>
+        <script src="./js/saludo.js"></script>
 </body>
 
 </html>
