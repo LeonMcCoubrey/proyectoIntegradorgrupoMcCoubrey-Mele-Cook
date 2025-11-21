@@ -577,6 +577,15 @@ input[type="date"] {
     margin: 10px 0;
 }
 
+.contenedor-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-producto {
+    background-color: rgb(255, 255, 255);
+}
 
 @media (max-width: 320px) {
     form .busqueda {
