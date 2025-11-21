@@ -44,7 +44,7 @@ main {
     width: 30%;
 }
 
-.categorias {
+.contenidoindex {
     font-size: 24px;
     margin-bottom: 20px;
     margin-left: 30%;
@@ -59,7 +59,7 @@ main {
     width: 40%; 
 }
 
-.ligas li {
+.category {
     list-style: none;
     border: 5px solid #999999b9;
     display: flex;
@@ -154,6 +154,7 @@ main {
 
 /*************************************cerramos****************************************************/
 
+
 .logo {
     border-radius: 200px;
     border: 3px solid #999;
@@ -208,8 +209,8 @@ main {
     justify-content: center;
     align-items: center;
     background-color: rgb(100, 255, 160);
-    width: 35vw;
-    height: 850px;
+    width: 27vw;
+    height: 600px;
     margin: 50px auto;
     border: 3px solid;
     border-color: black;
@@ -329,14 +330,29 @@ a {
     margin-left: 5px;
 }
 
+.cajalogin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contenido{
+    display:flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    width: 100%;
+}
+
 .formbox2 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: right;
     background-color: rgba(197, 191, 191, 0.5);
-    width: 35vw;
-    height: 500px;
+    width: 28vw;
+    height: 400px;
     margin: 50px auto;
     border-radius: 80px;
     border: 3px solid black;
