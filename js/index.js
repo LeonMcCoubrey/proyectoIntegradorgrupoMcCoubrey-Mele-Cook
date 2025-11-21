@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       for (let i = 0; i < 10 && i < productos.length; i++) {
         lista1.innerHTML += `
-          <article>
+          <article class="articulotop">
             <img src="${productos[i].thumbnail}">
             <p>${productos[i].title}</p>
             <p>${productos[i].description}</p>

@@ -1,26 +1,20 @@
- let categorias = document.querySelector(".contenidoindex")
-fetch(('https://dummyjson.com/products/category-list'))
+window.addEventListener("load", function () {
 
+    let logout = document.querySelector(".logout");
+    let auth = document.querySelector(".auth-container");
 
- .then(function(response) {
-   return response.json()
- })
+    if (logout) {
 
+        logout.addEventListener("click", function (event) {
+            event.preventDefault();
 
- .then(function(data) {
+            localStorage.removeItem("userEmail");
 
-
-   for (let i = 0; i < data.length; i++) {
-       let categoria = data[i];
-       if (categoria){
-           categorias.innerHTML += `
-               <li class="category">
-               <a href="./category.html?category=${categoria}">${categoria}</a>
-               </li>`
-           console.log("Categorias");
-       }
-   }
- })
- .catch(function(error) {
-   console.log("Error: " + error)
- })
+            auth.innerHTML = `
+                <h3><a href="./login.html">LogIn</a></h3>
+                <h3>/</h3>
+                <h3><a href="./register.html">Register</a></h3>
+            `;
+        });
+    }
+});

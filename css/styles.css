@@ -47,7 +47,6 @@ main {
 .contenidoindex {
     font-size: 24px;
     margin-bottom: 20px;
-    margin-left: 30%;
     text-decoration: underline;
 }
 
@@ -65,7 +64,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #007808;
+    background-color: #4b4b4b;
     color: white;
     margin: 25px 0px 15px 15px;
     text-align: center;
@@ -81,6 +80,7 @@ main {
 .caja {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 70%;
 }
 
@@ -208,7 +208,7 @@ main {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(100, 255, 160);
+    background-color: rgba(255, 255, 255, 0);
     width: 27vw;
     height: 600px;
     margin: 50px auto;
@@ -243,7 +243,7 @@ header {
 }
 
 body {
-    background-color: #56ff61df;
+    background-color: #d8d8d8df;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
@@ -321,13 +321,10 @@ a {
     padding-right: 10px;
 }
 
-.recuerdame {
-    display: flex;
-    justify-content: left
-}
 
 .recuerdamel {
     margin-left: 5px;
+    color: black;
 }
 
 .cajalogin {
@@ -350,7 +347,7 @@ a {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: right;
-    background-color: rgba(197, 191, 191, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     width: 28vw;
     height: 400px;
     margin: 50px auto;

@@ -6,11 +6,13 @@ let categoria = params.get("category");
 
 let url = categoria
     ? `https://dummyjson.com/products/category/${categoria}`
-    : "https://dummyjson.com/products?limit=20";
+    : "https://dummyjson.com/products?";
 
 fetch(url)
-  .then(res => res.json())
-  .then(data => {
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function(data)  {
 
     let productos = data.products || data;
 
@@ -18,7 +20,7 @@ fetch(url)
         ? `Categoría: ${categoria}` 
         : "Catálogo general";
 
-    productos.forEach(prod => {
+    productos.forEach(function(prod) {
       catalogo.innerHTML += `
         <article>
           <a href="./producto.html?id=${prod.id}">
@@ -31,4 +33,6 @@ fetch(url)
     });
 
   })
-  .catch(err => console.log("Error cargando productos:", err));
+  .catch(function (error) {
+      console.log("Error:", error);
+    });
