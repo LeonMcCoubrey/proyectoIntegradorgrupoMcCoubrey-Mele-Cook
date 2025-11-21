@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-
   let listaCategorias = document.querySelector(".ligas");
 
   fetch("https://dummyjson.com/products/category-list")
@@ -64,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       for (let i = 0; i < 10 && i < productos.length; i++) {
         lista2.innerHTML += `
-          <article>
+          <article class="articulotop">
             <img src="${productos[i].thumbnail}">
             <p>${productos[i].title}</p>
             <p>${productos[i].description}</p>
@@ -78,5 +77,19 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Error:", error);
     });
 
-});
+  let formularioBusqueda = document.querySelector(".cajabusqueda form");
+  let campoBusqueda = document.querySelector(".busqueda");
 
+  formularioBusqueda.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    if (campoBusqueda.value.length < 3) {
+      return alert("El término buscado debe tener al menos 3 caracteres");
+    }
+
+    this.submit();
+
+  });
+
+}); 

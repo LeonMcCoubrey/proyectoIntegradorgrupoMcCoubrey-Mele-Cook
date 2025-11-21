@@ -238,7 +238,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .acciones-login button {
@@ -525,14 +525,22 @@ input[type="date"] {
     border: 1px solid gray;
     border-radius: 6px;
 }
+#tituloCatalogo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 .catalogo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;  
+    gap: 40px;                
     padding: 30px;
-    width: 90%;
+    width: 90%;                
 }
+
+
 
 .catalogo article {
     background: white;
