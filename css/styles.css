@@ -48,9 +48,11 @@ main {
     font-size: 24px;
     margin-bottom: 20px;
 }
-.contenidoindex .categorias{
+
+.contenidoindex .categorias {
     margin-left: 20%;
 }
+
 .ligas {
     display: flex;
     flex-wrap: wrap;
@@ -106,18 +108,22 @@ main {
     justify-content: space-between;
     border: 2px solid black;
 }
+
 .articulotop a {
     color: black;
     text-decoration: none;
 }
+
 .articulotop img {
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
 }
-.contenedoraleatorio{
+
+.contenedoraleatorio {
     justify-content: space-between;
 }
+
 .contenedoraleatorio article {
     width: 225px;
     background-color: white;
@@ -134,6 +140,7 @@ main {
     height: 150px;
     margin-bottom: 10px;
 }
+
 .contenedoraleatorio article a {
     color: black;
     text-decoration: none;
@@ -369,9 +376,15 @@ a {
 }
 
 
-.recuerdamel {
-    margin-left: 5px;
+.recuerdame a {
+    margin-left: 25%;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
     color: black;
+    font-weight: bold;
+    background-color: white;
 }
 
 .cajalogin {
