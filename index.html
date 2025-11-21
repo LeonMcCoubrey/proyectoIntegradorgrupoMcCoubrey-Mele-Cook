@@ -11,18 +11,20 @@
 </head>
 
 <body>
-    <header>
+    <header class="superior">
         <nav class="display">
             <ul>
-                <li class="headl"><a href="./login.html">Login</a></li>
-                <li class="headr"><a href="./register.html">Register</a></li>
+                <li class="login headl"><a href="./login.html">Login</li></li>
+                <li class="login headr"><a href="./register.html">Register</li></li>
+                <li class="login saludo"><a href="#">LOG OUT</a></li>                    
+                <li class="login saludoss"></li>
             </ul>
         </nav>
         <img class="logo_index" src="./img/Logotipo de Fútbol Store.png" alt="Logo">
         <div class="cajabusqueda">
-            <form action="catalogo.html" method="get">
+            <form action="busqueda.html" method="get">
                 <label>BUSCA TU CAMISETA PREFERIDA</label>
-                <input class="busqueda" type="text" name="user" placeholder="Buscar productos...">
+                <input class="busqueda" type="text" name="query" placeholder="Buscar productos...">
             </form>
         </div>
         <nav class="nav">
@@ -56,6 +58,8 @@
   <section class="contenidoindex"></section>
 
  <script src="./js/index.js"></script>
+ <script src="./js/saludo.js"></script>
+ <script src="./js/logout.js"></script>
 </body>
 
 </html>

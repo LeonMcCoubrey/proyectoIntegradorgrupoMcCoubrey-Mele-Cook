@@ -1,26 +1,17 @@
- let categorias = document.querySelector(".contenidoindex")
-fetch(('https://dummyjson.com/products/category-list'))
+let email= localStorage.getItem("email");
+
+let login = document.querySelector(".headl");
+let register = document.querySelector(".headr");
+let saludo = document.querySelector(".saludo");
+let salu = document.querySelector(".saludoss");
 
 
- .then(function(response) {
-   return response.json()
- })
+console.log(salu)
 
-
- .then(function(data) {
-
-
-   for (let i = 0; i < data.length; i++) {
-       let categoria = data[i];
-       if (categoria){
-           categorias.innerHTML += `
-               <li class="category">
-               <a href="./category.html?category=${categoria}">${categoria}</a>
-               </li>`
-           console.log("Categorias");
-       }
-   }
- })
- .catch(function(error) {
-   console.log("Error: " + error)
- })
+if (email) {
+    login.style.display = "none";
+    register.style.display = "none";
+    saludo.style.display = "block";
+    salu.style.display = "block";
+    salu.innerText = `Hola, ${email}`;
+}

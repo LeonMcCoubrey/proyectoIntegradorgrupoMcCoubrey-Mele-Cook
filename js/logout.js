@@ -1,20 +1,25 @@
-window.addEventListener("load", function () {
+let logout = document.querySelector(".saludo");
+let loginLink = document.querySelector(".headl");
+let registerLink = document.querySelector(".headr");
 
-    let logout = document.querySelector(".logout");
-    let auth = document.querySelector(".auth-container");
+let saludoLogout = document.querySelector(".saludo");
+let saluLogout = document.querySelector(".saludoss");
 
-    if (logout) {
 
-        logout.addEventListener("click", function (event) {
-            event.preventDefault();
+console.log(logout);
 
-            localStorage.removeItem("userEmail");
 
-            auth.innerHTML = `
-                <h3><a href="./login.html">LogIn</a></h3>
-                <h3>/</h3>
-                <h3><a href="./register.html">Register</a></h3>
-            `;
-        });
-    }
-});
+
+
+logout.addEventListener("click", function () {
+    console.log(logout);
+    
+    localStorage.clear();
+
+
+    loginLink.style.display = "block";
+    registerLink.style.display = "block";
+    saludoLogout.style.display = "none";
+    saluLogout.style.display = "none";
+
+})
