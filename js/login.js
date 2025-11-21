@@ -57,6 +57,3 @@ if (form) {
     form.submit();
   });
 }
-
-
-

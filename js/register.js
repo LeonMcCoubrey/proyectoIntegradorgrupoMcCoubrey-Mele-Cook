@@ -54,8 +54,10 @@ let params = new URLSearchParams(location.search);
 let id = params.get("id");
 
 fetch(`https://dummyjson.com/products/${id}`)
-  .then(res => res.json())
-  .then(prod => {
+  .then(function (res) {
+      return res.json();
+    })
+  .then(function(prod) {
 
     cont.innerHTML = `
       <div class="producto-box">
@@ -66,5 +68,6 @@ fetch(`https://dummyjson.com/products/${id}`)
       </div>
     `;
   })
-  .catch(err => console.log("Error cargando producto:", err));
-
+  .catch(function (error) {
+      console.log("Error:", error);
+    });

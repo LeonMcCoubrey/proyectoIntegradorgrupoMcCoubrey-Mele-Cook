@@ -7,9 +7,11 @@ if (!id) {
   contenedor.innerHTML = "<p>Error: no se encontró el producto.</p>";
 }
 
-fetch("https://dummyjson.com/products/${id}")
-  .then(res => res.json())
-  .then(producto => {
+fetch(`https://dummyjson.com/products/${id}`)
+  .then(function (res) {
+      return res.json();
+    })
+  .then(function(producto) {
 
     contenedor.innerHTML = `
       <h2>${producto.title}</h2>
@@ -27,7 +29,7 @@ fetch("https://dummyjson.com/products/${id}")
       <button onclick="history.back()"> Volver</button>
     `;
   })
-  .catch(error => {
-    console.log("Error al cargar el producto:", error);
+  .catch(function (error) {
+      console.log("Error:", error);
     contenedor.innerHTML = "<p>Error al cargar la información del producto.</p>";
   });
