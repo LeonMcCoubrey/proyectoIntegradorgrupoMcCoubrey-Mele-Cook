@@ -1,53 +1,41 @@
-let catalogo = document.querySelector(".catalogo");
+document.addEventListener("DOMContentLoaded", function () {
 
-fetch("https://dummyjson.com/products/")
-  .then(res => res.json())
-  .then(data => {
+  let lista1 = document.querySelector(".contenedortop");
 
-    let productos = data.products;
-
-    productos.forEach((producto, i) => {
-
-      catalogo.innerHTML += `
-        <article class="caja${i+1}">
-          <a href="./producto.html?id=${producto.id}">
-            <img src="${producto.thumbnail}" alt="${producto.title}">
-            <p>Precio: $${producto.price}</p>
-            <p>${producto.stock} en stock</p>
-          </a> 
-       <span class="ver-detalle">Ver detalle</span>
-          </a>
-        </article>
-      `;
+  fetch("https://dummyjson.com/products/category/sports-accessories")
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      let productos = data.products;
+      for (let i = 0; i < 10; i++) {
+        lista1.innerHTML += `
+          <article>
+            <img src="${productos[i].thumbnail}">
+            <p>${productos[i].title}</p>
+            <p>${productos[i].description}</p>
+            <p>$${productos[i].price}</p>
+            <a href="./producto.html?id=${productos[i].id}">Ver detalle</a>
+          </article>
+        `;
+      }
     });
 
-  })
-  .catch(error => {
-    console.log("Hubo un error al cargar los productos:", error);
-  });
-  let categorias = document.querySelector(".contenidoindex")
-fetch(('https://dummyjson.com/products/category-list'))
+  let lista2 = document.querySelector(".contenedoraleatorio");
 
+  fetch("https://dummyjson.com/products/category/smartphones")
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      let productos = data.products;
+      for (let i = 0; i < 10; i++) {
+        lista2.innerHTML += `
+          <article>
+            <img src="${productos[i].thumbnail}">
+            <p>${productos[i].title}</p>
+            <p>${productos[i].description}</p>
+            <p>$${productos[i].price}</p>
+            <a href="./producto.html?id=${productos[i].id}">Ver detalle</a>
+          </article>
+        `;
+      }
+    });
 
- .then(function(response) {
-   return response.json()
- })
-
-
- .then(function(data) {
-
-
-   for (let i = 0; i < data.length; i++) {
-       let categoria = data[i];
-       if (categoria){
-           categorias.innerHTML += `
-               <li class="category">
-               <a href="./category.html?category=${categoria}">${categoria}</a>
-               </li>`
-           console.log("Categorias");
-       }
-   }
- })
- .catch(function(error) {
-   console.log("Error: " + error)
- })
+});
