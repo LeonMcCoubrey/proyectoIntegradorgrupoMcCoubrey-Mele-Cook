@@ -2,13 +2,13 @@
 let params = new URLSearchParams(window.location.search);
 let id = params.get("id");
 
+
 let contenedor = document.querySelector(".contenedor-producto");
 
 
 if (!id) {
   contenedor.innerHTML = "<p>Error: no se encontró el producto.</p>";
 }
-
 
 fetch(`https://dummyjson.com/products/${id}`)
   .then(res => res.json())
