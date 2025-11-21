@@ -1,28 +1,34 @@
 let catalogo = document.querySelector(".catalogo");
+let titulo = document.querySelector("#tituloCatalogo");
 
-fetch("https://dummyjson.com/products?limit=10")
+let params = new URLSearchParams(location.search);
+let categoria = params.get("category");
+
+let url = categoria
+    ? `https://dummyjson.com/products/category/${categoria}`
+    : "https://dummyjson.com/products?limit=20";
+
+fetch(url)
   .then(res => res.json())
   .then(data => {
 
-    let productos = data.products;
+    let productos = data.products || data;
 
-    productos.forEach((p, i) => {
+    titulo.innerText = categoria 
+        ? `Categoría: ${categoria}` 
+        : "Catálogo general";
 
+    productos.forEach(prod => {
       catalogo.innerHTML += `
-        <article class="caja${i+1}">
-          <a href="./producto.html?id=${p.id}">
-            <img src="${p.thumbnail}" alt="${p.title}">
-            <p>Precio: $${p.price}</p>
-            <p>${p.stock} en stock</p>
-          </a> 
-          <span class="ver-detalle">Ver detalle</span>
-        Ver detalle
+        <article>
+          <a href="./producto.html?id=${prod.id}">
+            <img src="${prod.thumbnail}">
+            <p>${prod.title}</p>
+            <p>Precio: $${prod.price}</p>
           </a>
         </article>
       `;
     });
 
   })
-  .catch(error => {
-    console.log("Hubo un error al cargar los productos:", error);
-  });
+  .catch(err => console.log("Error cargando productos:", err));

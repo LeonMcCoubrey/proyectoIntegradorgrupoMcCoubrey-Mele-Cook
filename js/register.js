@@ -1,3 +1,4 @@
+
 let form = document.querySelector(".registrar");
 
 if (form) {
@@ -46,3 +47,24 @@ if (form) {
     form.submit();
   });
 }
+
+let cont = document.querySelector(".producto");
+
+let params = new URLSearchParams(location.search);
+let id = params.get("id");
+
+fetch(`https://dummyjson.com/products/${id}`)
+  .then(res => res.json())
+  .then(prod => {
+
+    cont.innerHTML = `
+      <div class="producto-box">
+        <img class="producto-img" src="${prod.thumbnail}">
+        <h1>${prod.title}</h1>
+        <h3>$${prod.price}</h3>
+        <p>${prod.description}</p>
+      </div>
+    `;
+  })
+  .catch(err => console.log("Error cargando producto:", err));
+
