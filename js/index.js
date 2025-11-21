@@ -3,12 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let lista1 = document.querySelector(".contenedortop");
 
   fetch("https://dummyjson.com/products/category/sports-accessories")
-    .then(function(res) { return res.json(); })
-    .then(function(data) {
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
       let productos = data.products;
       for (let i = 0; i < 10; i++) {
-        lista1.innerHTML += `
-          <article>
+        lista1.innerHTML += `<article>
             <img src="${productos[i].thumbnail}">
             <p>${productos[i].title}</p>
             <p>${productos[i].description}</p>
@@ -22,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let lista2 = document.querySelector(".contenedoraleatorio");
 
   fetch("https://dummyjson.com/products/category/smartphones")
-    .then(function(res) { return res.json(); })
-    .then(function(data) {
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
       let productos = data.products;
       for (let i = 0; i < 10; i++) {
         lista2.innerHTML += `
@@ -39,3 +38,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+

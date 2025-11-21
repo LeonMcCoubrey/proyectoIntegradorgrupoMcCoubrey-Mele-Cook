@@ -59,7 +59,7 @@ main {
     width: 40%; 
 }
 
-.category {
+.ligas li {
     list-style: none;
     border: 5px solid #999999b9;
     display: flex;
@@ -84,7 +84,7 @@ main {
     width: 70%;
 }
 
-.contenedor {
+.contenedortop {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -92,7 +92,7 @@ main {
     margin-left: 5%;
 }
 
-.contenedor article {
+.contenedortop article {
     border: none;
     text-align: center;
     color: black;
