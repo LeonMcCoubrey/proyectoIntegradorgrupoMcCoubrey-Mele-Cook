@@ -1,4 +1,8 @@
+
 let categorias = document.querySelector(".contenidoindex")
+
+ let categorias = document.querySelector(".contenidoindex")
+
 fetch(('https://dummyjson.com/products/category-list'))
 
 
@@ -23,6 +27,7 @@ fetch(('https://dummyjson.com/products/category-list'))
  })
  .catch(function(error) {
    console.log("Error: " + error)
+
  })
 
 
@@ -58,3 +63,6 @@ if (form) {
     form.submit();
   });
 }
+
+ })
+

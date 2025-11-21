@@ -1,53 +1,36 @@
-let contenedor = document.querySelector(".producto-real");
-let params = new URLSearchParams(location.search);
+
+let params = new URLSearchParams(window.location.search);
 let id = params.get("id");
+
+let contenedor = document.querySelector(".contenedor-producto");
+
+
+if (!id) {
+  contenedor.innerHTML = "<p>Error: no se encontró el producto.</p>";
+}
 
 
 fetch(`https://dummyjson.com/products/${id}`)
   .then(res => res.json())
-  .then(data => {
+  .then(producto => {
+    
+    contenedor.innerHTML = `
+      <h2>${producto.title}</h2>
 
-  
-    let tagsHTML = "";
-    for (let i = 0; i < data.tags.length; i++) {
-      tagsHTML += "<li>" + data.tags[i] + "</li>";
-    }
+      <img src="${producto.thumbnail}" alt="${producto.title}" class="img-producto">
 
-   
-let reviewsHTML = "";
- for (let i = 0; i < data.reviews.length; i++) {
-  let r = data.reviews[i];
+      <p><strong>Precio:</strong> $${producto.price}</p>
+      <p><strong>Stock disponible:</strong> ${producto.stock}</p>
+      <p><strong>Marca:</strong> ${producto.brand}</p>
+      <p><strong>Categoría:</strong> ${producto.category}</p>
+      
+      <h3>Descripción</h3>
+      <p>${producto.description}</p>
 
-      reviewsHTML +=
-        "<div class='review'>" +
-        "<p><strong>" + r.reviewerName + "</strong></p>" +
-        "<p>Rating: " + r.rating + "/5</p>" +
-        "<p>" + r.comment + "</p>" +
-        "<p><em>" + r.date + "</em></p>" +
-        "<hr>" +
-        "</div>";
-    }
-
-
- contenedor.innerHTML = `
-      <article class="producto-box">
-        <h1>${data.title}</h1>
-     <h3>${data.brand}</h3>
-
-     <img class="producto-img" src="${data.thumbnail}" alt="${data.title}">
-
-     <p><strong>Precio:</strong> $${data.price}</p>
-     <p><strong>Stock:</strong> ${data.stock} unidades</p>
-         <p><strong>Categoría:</strong> ${data.category}</p>
-
- <h3>Tags:</h3>
- <ul>${tagsHTML}</ul>
- <h3>Reviews:</h3>
-        <div>${reviewsHTML}</div>
-      </article>
+      <button onclick="history.back()">⬅️ Volver</button>
     `;
   })
-  .catch(err => {
-    contenedor.innerHTML = "<h2>Error al cargar el producto</h2>";
-    console.log(err);
+  .catch(error => {
+    console.log("Error al cargar el producto:", error);
+    contenedor.innerHTML = "<p>Error al cargar la información del producto.</p>";
   });
