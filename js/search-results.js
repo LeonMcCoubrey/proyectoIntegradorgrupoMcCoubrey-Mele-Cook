@@ -1,4 +1,3 @@
-
 let query = location.search
 let queryObj = new URLSearchParams (query)
 let busqueda = queryObj.get("query")

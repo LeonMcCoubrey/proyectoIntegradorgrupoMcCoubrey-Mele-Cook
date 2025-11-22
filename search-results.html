@@ -11,20 +11,11 @@
 <body>
     <header>
         <article class="display">
-            <li class="headl"><a href="./login.html">Login</li></li>
-                <li class="  headr  "><a href="./register.html">Register</li></li>
-                <li class=" headl saludo x"><a href="#">LOG OUT</a></li>                    
-                <li class="headr saludoss"></li>
+            <a class="headl" href="./login.html">Login</a>
+            <a class="headr" href="./register.html">Register</a>
         </article>
         <main>
             <img class="logo" src="./img/Logotipo de Fútbol Store.png" alt="Logo">
-
-            <div class="cajabusqueda">
-            <form action="./search-results.html" method="get">
-                <label>BUSCA TU PRODUCTO PREFERIDO</label>
-                <input class="busqueda" type="text" name="query" placeholder="Buscar productos...">
-            </form>
-        </div>
         </main>
         <nav class="nav">
             <div class="navb">
@@ -36,16 +27,16 @@
         </nav>
     </header>
 
-  <section class="contenidoindex"></section>
-    
-  <footer class="footer">
-            <p> *Franco Mele * Thomas Cook * Leon McCoubrey* </p>
-        </footer>
+  <section style="display: flex;" style="justify-content: space-between;" class="contenidoindex"></section>
+    <footer>
+        <ul>
+            <li>Thomas Cook</li>
+            <li>Leon Mc Coubrey</li>
+            <li>Franco Mele</li>
+        </ul>
+    </footer>
 
-     <script src="./js/busqueda.js"></script>
-     <script src="./js/saludo.js"></script>
-     <script src="./js/logout.js"></script>
-
+    <script src="./js/search-results.js"></script> 
 </body>
 
 </html>
