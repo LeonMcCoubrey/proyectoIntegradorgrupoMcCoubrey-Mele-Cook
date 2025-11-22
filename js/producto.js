@@ -9,9 +9,9 @@ if (!id) {
 
 fetch(`https://dummyjson.com/products/${id}`)
   .then(function (res) {
-      return res.json();
-    })
-  .then(function(producto) {
+    return res.json();
+  })
+  .then(function (producto) {
 
     contenedor.innerHTML = `
       <h2>${producto.title}</h2>
@@ -30,6 +30,6 @@ fetch(`https://dummyjson.com/products/${id}`)
     `;
   })
   .catch(function (error) {
-      console.log("Error:", error);
+    console.log("Error:", error);
     contenedor.innerHTML = "<p>Error al cargar la información del producto.</p>";
   });

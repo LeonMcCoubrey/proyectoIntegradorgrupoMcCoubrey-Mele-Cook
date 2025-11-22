@@ -12,7 +12,7 @@ console.log(logout);
 
 logout.addEventListener("click", function () {
     console.log(logout);
-    
+
     localStorage.clear();
 
 

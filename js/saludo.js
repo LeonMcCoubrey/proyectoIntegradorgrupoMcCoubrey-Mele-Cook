@@ -1,4 +1,4 @@
-let email= localStorage.getItem("email");
+let email = localStorage.getItem("email");
 
 let login = document.querySelector(".headl");
 let register = document.querySelector(".headr");

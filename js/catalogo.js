@@ -49,8 +49,8 @@ fetch(url)
   .catch(function (error) {
     console.log("Error:", error);
   });
-  
-  document.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded", function () {
 
   let listaCategorias = document.querySelector(".ligas");
 
@@ -78,4 +78,4 @@ fetch(url)
       console.log("Error cargando categorías:", error);
     });
 
-  });
+});

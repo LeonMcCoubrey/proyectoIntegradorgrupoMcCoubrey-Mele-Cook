@@ -87,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (campoBusqueda.value.length < 3) {
       return alert("El término buscado debe tener al menos 3 caracteres");
     }
-
     this.submit();
 
   });

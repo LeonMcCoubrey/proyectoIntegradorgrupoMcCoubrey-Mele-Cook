@@ -8,7 +8,7 @@ if (form) {
     let emailInput = form.querySelector("#email");
     let passwordInput = form.querySelector("#contraseña");
     let repeatPasswordInput = form.querySelector("#repetircontraseña");
-    let terminosInput = form.Terminos; 
+    let terminosInput = form.Terminos;
     let email = emailInput.value;
     let password = passwordInput.value;
     let repeatPassword = repeatPasswordInput.value;
@@ -42,10 +42,10 @@ if (form) {
       alert("no se han aceptado los terminos y condiciones.");
       return;
     }
-    
+
     form.action = "./login.html";
     form.submit();
-  });
+  });
 }
 
 let cont = document.querySelector(".producto");
@@ -55,9 +55,9 @@ let id = params.get("id");
 
 fetch(`https://dummyjson.com/products/${id}`)
   .then(function (res) {
-      return res.json();
-    })
-  .then(function(prod) {
+    return res.json();
+  })
+  .then(function (prod) {
 
     cont.innerHTML = `
       <div class="producto-box">
@@ -69,5 +69,5 @@ fetch(`https://dummyjson.com/products/${id}`)
     `;
   })
   .catch(function (error) {
-      console.log("Error:", error);
-    });
+    console.log("Error:", error);
+  });
