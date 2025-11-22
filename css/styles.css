@@ -8,6 +8,9 @@
     font-size: 24px;
     font-weight: bold;
 }
+.cajabusqueda form{
+    justify-content: center;
+}
 
 .cajabusqueda input {
     padding: 12px 18px;
@@ -42,6 +45,8 @@ main {
 
 .contenidoindex {
     width: 30%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contenidoindex {
