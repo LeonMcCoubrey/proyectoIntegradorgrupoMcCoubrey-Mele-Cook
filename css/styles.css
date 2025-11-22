@@ -376,15 +376,18 @@ footer {
 .x{
     margin-left: 30px;
 }
-.saludo {
+.t {
     margin-top: 27px;
 }
 
 .saludoss {
-    margin-top: 27px;
     width: 300px;
 }
 
+.h{
+    margin-top: 27px;
+
+}
 .display {
     display: flex;
     flex-wrap: wrap;
