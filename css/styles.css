@@ -45,7 +45,6 @@ main {
 
 .contenidoindex {
     width: 30%;
-    display: flex;
     flex-wrap: wrap;
 }
 
@@ -66,6 +65,7 @@ main {
     align-items: stretch;
     width: 40%;
     justify-content: center;
+    margin-bottom: 400px;
 
 }
 
