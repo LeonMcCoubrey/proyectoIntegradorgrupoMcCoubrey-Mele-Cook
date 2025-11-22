@@ -49,3 +49,33 @@ fetch(url)
   .catch(function (error) {
     console.log("Error:", error);
   });
+  
+  document.addEventListener("DOMContentLoaded", function () {
+
+  let listaCategorias = document.querySelector(".ligas");
+
+  fetch("https://dummyjson.com/products/category-list")
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (categorias) {
+
+      listaCategorias.innerHTML = "";
+
+      for (let i = 0; i < categorias.length; i++) {
+        let cat = categorias[i];
+
+        listaCategorias.innerHTML += `
+          <li class="category">
+            <a href="./catalogo.html?category=${cat}">
+              ${cat}
+            </a>
+          </li>
+        `;
+      }
+    })
+    .catch(function (error) {
+      console.log("Error cargando categorías:", error);
+    });
+
+  });
