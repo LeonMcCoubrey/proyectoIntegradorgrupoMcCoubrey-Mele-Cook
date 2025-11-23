@@ -1,6 +1,6 @@
 let logout = document.querySelector(".saludo");
 let loginLink = document.querySelector(".headl");
-let registerLink = document.querySelector(".headr");
+let registerLink = document.querySelector(".register");
 let saludoLogout = document.querySelector(".saludo");
 let saluLogout = document.querySelector(".saludoss");
 
