@@ -1,4 +1,3 @@
-
 let form = document.querySelector(".logeo");
 
 if (form) {

@@ -8,8 +8,8 @@ if (form) {
     let emailInput = form.querySelector("#email");
     let passwordInput = form.querySelector("#contraseña");
     let repeatPasswordInput = form.querySelector("#repetircontraseña");
-    let terminosInput = form.Terminos;
-    let email = emailInput.value;
+    let terminosInput = form.querySelector("#terminos");
+    let terminos = terminosInput.checked;
     let password = passwordInput.value;
     let repeatPassword = repeatPasswordInput.value;
 
